@@ -1,0 +1,7 @@
+C:\Users\Nex\source\repos\simplic-academy\Simplic.Academy\Start\bin\Debug\Start.exe.config
+C:\Users\Nex\source\repos\simplic-academy\Simplic.Academy\Start\bin\Debug\Start.exe
+C:\Users\Nex\source\repos\simplic-academy\Simplic.Academy\Start\bin\Debug\Start.pdb
+C:\Users\Nex\source\repos\simplic-academy\Simplic.Academy\Start\obj\Debug\Start.csprojAssemblyReference.cache
+C:\Users\Nex\source\repos\simplic-academy\Simplic.Academy\Start\obj\Debug\Start.csproj.CoreCompileInputs.cache
+C:\Users\Nex\source\repos\simplic-academy\Simplic.Academy\Start\obj\Debug\Start.exe
+C:\Users\Nex\source\repos\simplic-academy\Simplic.Academy\Start\obj\Debug\Start.pdb
