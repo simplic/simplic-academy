@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Testi_ng
+namespace Testing
 {
 	class Program
 	{
 		static void Main(string[] args)
 		{
-
 		}
 	}
 }
