@@ -1,21 +1,25 @@
-﻿# Exercise 01.1 (Classes & Properties)
+﻿# Exercise 01 (Class, Property, Console)
 
-1)Create a class named Person that has a name(string), an age(int), an address (string) and a house number (int)
+In this exercise you will to create classes with properties and write it on the console
 
-# Excercise 01.2
+## Exercise 01.1 
 
-1)Create the class address that contains the streetname and the number 
-2)Replace the Address in your person class with your new Address class
+1) Create a class named Person that has a name(string), an age(int), an address (string) and a house number (int)
 
-# Exercise 01.3
+## Excercise 01.2
 
-1)Create a constructor in your address that takes the name and the number
+1) Create the class address that contains the streetname and the number 
+2) Replace the Address in your person class with your new Address class
 
-# Exercise 01.4
+## Exercise 01.3
 
-1)A person needs a method to introduce itself. 
+1) Create a constructor in your address that takes the name and the number
 
-**Example** 
-Hello I am {name}, {age} years old and live at {address}
+## Exercise 01.4
 
-2)Let your person introduce itself in the console
+1) A person needs a method to introduce itself. 
+
+**Example**:
+>Hello I am {name}, {age} years old and live at {address}
+
+2) Let your person introduce itself in the console
