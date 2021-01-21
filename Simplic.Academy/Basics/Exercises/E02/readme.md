@@ -1,26 +1,22 @@
 ﻿# Exercise 02 (Control structures, Loops,  Input, Console)
 
 Now we need to interact with the console.
-Keywords
-1. Control structures:
+**Keywords**
+
+Control structures:
 <details>
-  ```
   if, switch case 
-  ```
 </details>
 
 Loops:
 <details>
-  ```
  do while, foreach, for, while
-  ```
+
 </details>
-do while, foreach, for, while)
+
 Input:
 <details>
-  ```
 Console.ReadLine();
-  ```
 </details>
 
 
