@@ -1,7 +1,8 @@
 ﻿# Exercise 02 (Control structures, Loops,  Input, Console)
 
 Now we need to interact with the console.
-**Keywords**
+
+**___Keywords___**
 
 Control structures:
 <details>
