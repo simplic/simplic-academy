@@ -4,7 +4,7 @@ In this exercise you create classes with properties and write it on the console
 
 ## Exercise 01.1 
 
-1) Create a class named **Person** that has a **Name(string)**, an **age(int)**, an **address(string)** and a house **number(int)**
+1) Create a class named **Person** that has a **Name(string)**, an **Age(int)**, an **Address(string)** and a **House Number(int)**
 
 ## Excercise 01.2
 
