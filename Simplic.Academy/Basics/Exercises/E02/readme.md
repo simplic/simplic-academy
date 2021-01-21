@@ -23,7 +23,7 @@ Console.ReadLine();
 
 
 
-## Exercise 01.1 
+## Exercise 02.1 
 
 1) Create menu that asks the user for either to add two number or substract the two number.
 ````
@@ -39,13 +39,13 @@ Your result: 15
 ````
 
 
-## Excercise 01.2
+## Excercise 02.2
 
 1) Add multiplication and division
 2) **Question:** Whats the difference between the data types: long, int, double, decimal?
 3) **Question:** Whats the difference between the loops: for, foreach, do while and while?
 
-## Exercise 01.3
+## Exercise 02.3
 
 1) Add a mechanism that if the user chose something out of the range of the menu, the user should be notified
 ````
