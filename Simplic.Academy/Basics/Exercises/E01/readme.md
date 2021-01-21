@@ -1,6 +1,6 @@
 ﻿# Exercise 01 (Class, Property, Console)
 
-In this exercise you will to create classes with properties and write it on the console
+In this exercise you will create classes with properties and write it on the console
 
 ## Exercise 01.1 
 

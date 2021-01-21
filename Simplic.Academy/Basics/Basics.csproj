@@ -50,6 +50,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Exercises\E01\readme.md" />
+    <None Include="Exercises\E02\readme.md" />
     <None Include="Exercises\readme.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
