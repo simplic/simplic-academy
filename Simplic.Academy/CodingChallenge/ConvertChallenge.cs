@@ -16,6 +16,10 @@ namespace CodingChallenge
             var intValue = int.Parse(value);
 
             Assert.Equal(241, intValue);
+
+            // Your explanation: 
+            // 
+            // 
         }
 
         [Fact]
@@ -26,6 +30,10 @@ namespace CodingChallenge
             var intValue = int.Parse(value);
 
             Assert.Equal(241, intValue);
+
+            // Your explanation: 
+            // 
+            // 
         }
 
         [Fact]
@@ -37,6 +45,10 @@ namespace CodingChallenge
             var doubleValue = double.Parse(value, culture);
 
             Assert.Equal(24.1, doubleValue);
+
+            // Your explanation: 
+            // 
+            // 
         }
     }
 }

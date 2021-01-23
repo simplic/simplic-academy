@@ -27,6 +27,10 @@ namespace CodingChallenge
 
             Assert.Equal("Max", obj.Name);
             Assert.Equal(12, obj.Age);
+
+            // Your explanation: 
+            // 
+            // 
         }
 
         [Fact]
@@ -43,6 +47,10 @@ namespace CodingChallenge
 
             Assert.Equal("Max", obj.Name);
             Assert.Equal(12, obj.Age);
+
+            // Your explanation: 
+            // 
+            // 
         }
 
         [Fact]
@@ -59,6 +67,10 @@ namespace CodingChallenge
 
             Assert.Equal("Max", obj.Name);
             Assert.Equal(new DateTime(2000, 4, 3, 19, 30, 45), obj.Birthday);
+
+            // Your explanation: 
+            // 
+            // 
         }
     }
 }
