@@ -11,6 +11,8 @@ namespace CodingChallenge
         [Fact]
         public void FixBug_Convert_01()
         {
+            // Rule: The assertation must not be changed
+
             var value = "24 1";
 
             var intValue = int.Parse(value);
@@ -25,6 +27,8 @@ namespace CodingChallenge
         [Fact]
         public void FixBug_Convert_02()
         {
+            // Rule: The assertation must not be changed
+
             var value = "24​1";
 
             var intValue = int.Parse(value);
@@ -39,6 +43,8 @@ namespace CodingChallenge
         [Fact]
         public void FixBug_Convert_03()
         {
+            // Rule: The assertation must not be changed
+
             var value = "24.1";
             var culture = new CultureInfo("de-DE");
 
