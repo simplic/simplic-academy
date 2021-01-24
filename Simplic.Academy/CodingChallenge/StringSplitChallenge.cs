@@ -5,7 +5,7 @@ using Xunit;
 
 namespace CodingChallenge
 {
-    public class StringSplit_Challenge
+    public class StringSplitChallenge
     {
         [Fact]
         public void StringSplit_01()
