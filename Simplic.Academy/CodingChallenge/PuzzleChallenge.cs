@@ -56,6 +56,8 @@ vvvv
             //        2. Different chars must not overlap
             //        3. Insert all forms into completedBoard
 
+            // <---- ---- ---- add code here ---- ---- ---->
+
             Assert.Equal(board.Select(x => x == 'x').Count(), completedBoard.Select(x => x == 'x').Count());
             Assert.Contains(form0, board);
             Assert.Contains(form1, board);
