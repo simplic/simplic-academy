@@ -13,6 +13,13 @@ namespace CodingChallenge
         [Fact]
         public void Puzzle_01()
         {
+            // Task: Write an algorithm, that places all forms inside the board.
+            // Rules: 1. Place all forms in the board
+            //        2. The positions must be calculated by an algorithm, do not set statix/fixed positions!
+            //        3. Different chars must not overlap
+            //        4. Insert all forms into completedBoard
+            //        5. Attach the generated (completed) board as string below in your explanation
+
             var board =
 @"
 xxxxxxxxxxxxxx
@@ -58,13 +65,6 @@ ggg";
             form4 = Regex.Replace(form2, @"^\s+$[\r\n]*", string.Empty, RegexOptions.Multiline);
 
             var completedBoard = board;
-
-            // Task: Write an algorithm, that places all forms inside the board.
-            // Rules: 1. Place all forms in the board
-            //        2. The positions must be calculated by an algorithm, do not set statix/fixed positions!
-            //        3. Different chars must not overlap
-            //        4. Insert all forms into completedBoard
-            //        5. Attach the generated (completed) board as string below in your explanation
 
             // <---- ---- ---- add code here ---- ---- ---->
 
