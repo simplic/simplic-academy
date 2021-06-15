@@ -22,3 +22,4 @@
 |Debugging.StepOver|F10|-
 |Surround with snippet| Ctrl + K + S |-
 |Build Solution| Ctrl + B |-
+|Go to all|Ctrl + T|-
