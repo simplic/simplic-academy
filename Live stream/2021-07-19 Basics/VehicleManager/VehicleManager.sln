@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleManager.Console", "VehicleManager.Console\VehicleManager.Console.csproj", "{C9BC06E6-3C0B-4978-BF19-610DFB44D9AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleManager", "VehicleManager\VehicleManager.csproj", "{C277C17A-CA43-4EA0-B5DC-3A5CD0504E07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9BC06E6-3C0B-4978-BF19-610DFB44D9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9BC06E6-3C0B-4978-BF19-610DFB44D9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9BC06E6-3C0B-4978-BF19-610DFB44D9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9BC06E6-3C0B-4978-BF19-610DFB44D9AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C277C17A-CA43-4EA0-B5DC-3A5CD0504E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C277C17A-CA43-4EA0-B5DC-3A5CD0504E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C277C17A-CA43-4EA0-B5DC-3A5CD0504E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C277C17A-CA43-4EA0-B5DC-3A5CD0504E07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2111D287-E4C7-4B41-B8BC-D5660C2D2882}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,10 @@
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager.Console\bin\Debug\VehicleManager.Console.exe.config
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager.Console\bin\Debug\VehicleManager.Console.exe
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager.Console\bin\Debug\VehicleManager.Console.pdb
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager.Console\obj\Debug\VehicleManager.Console.csproj.AssemblyReference.cache
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager.Console\obj\Debug\VehicleManager.Console.csproj.CoreCompileInputs.cache
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager.Console\obj\Debug\VehicleManager.Console.exe
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager.Console\obj\Debug\VehicleManager.Console.pdb
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager.Console\bin\Debug\VehicleManager.dll
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager.Console\bin\Debug\VehicleManager.pdb
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager.Console\obj\Debug\VehicleManager.Console.csproj.CopyComplete

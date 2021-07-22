@@ -1,0 +1,5 @@
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager\bin\Debug\VehicleManager.dll
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager\bin\Debug\VehicleManager.pdb
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager\obj\Debug\VehicleManager.csproj.CoreCompileInputs.cache
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager\obj\Debug\VehicleManager.dll
+C:\Users\Benedikt Eggers\source\repos\VehicleManager\VehicleManager\obj\Debug\VehicleManager.pdb
