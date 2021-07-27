@@ -12,9 +12,22 @@ namespace VehicleManager.UI
         public event PropertyChangedEventHandler PropertyChanged;
         private Vehicle vehicle;
 
+        public VehicleViewModel(Vehicle vehicle)
+        {
+            this.vehicle = vehicle;
+        }
+
         public VehicleViewModel()
         {
             vehicle = new Car();
+        }
+
+        /// <summary>
+        /// Gets the actual vehicle instance
+        /// </summary>
+        public Vehicle Model
+        {
+            get => vehicle;
         }
 
         public int Id { get; set; }

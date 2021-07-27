@@ -49,6 +49,7 @@
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
 
             <Label Content="Manufacturer" Grid.Column="0" Grid.Row="0" />
@@ -59,6 +60,8 @@
 
             <Label Content="Fuel type" Grid.Column="0" Grid.Row="2" />
             <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding SelectedVehicle.FuelType, UpdateSourceTrigger=PropertyChanged}" Width="250" />
+
+            <Button Content="Save" Grid.Column="1" Grid.Row="3" Command="{Binding SaveToDB}" Margin="2" />
         </Grid>
     </Grid>
 </Window>

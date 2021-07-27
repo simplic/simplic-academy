@@ -97,6 +97,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\VehicleManager.DB\VehicleManager.DB.csproj">
+      <Project>{FC152C21-CFEA-4868-AA49-1ECAA18A9A00}</Project>
+      <Name>VehicleManager.DB</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VehicleManager\VehicleManager.csproj">
       <Project>{c277c17a-ca43-4ea0-b5dc-3a5cd0504e07}</Project>
       <Name>VehicleManager</Name>

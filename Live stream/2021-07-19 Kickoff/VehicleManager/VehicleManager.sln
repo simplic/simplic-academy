@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleManager", "VehicleMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleManager.UI", "VehicleManager.UI\VehicleManager.UI.csproj", "{A899EF98-BB67-452C-A32E-6ED39D8E9595}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleManager.DB", "VehicleManager.DB\VehicleManager.DB.csproj", "{FC152C21-CFEA-4868-AA49-1ECAA18A9A00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A899EF98-BB67-452C-A32E-6ED39D8E9595}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A899EF98-BB67-452C-A32E-6ED39D8E9595}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A899EF98-BB67-452C-A32E-6ED39D8E9595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC152C21-CFEA-4868-AA49-1ECAA18A9A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC152C21-CFEA-4868-AA49-1ECAA18A9A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC152C21-CFEA-4868-AA49-1ECAA18A9A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC152C21-CFEA-4868-AA49-1ECAA18A9A00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

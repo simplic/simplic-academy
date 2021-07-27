@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using VehicleManager.DB;
 
 namespace VehicleManager.UI
 {
@@ -40,6 +41,13 @@ namespace VehicleManager.UI
 
         public VehicleManagerViewModel()
         {
+            var dbVehicles = VehicleDBManager.GetAll();
+
+            foreach (var dbVehicle in dbVehicles)
+            {
+                vehicles.Add(new VehicleViewModel(dbVehicle));
+            }
+
             AddCarCommand = new RelayCommand(() => 
             {
                 this.Vehicles.Add(new VehicleViewModel
@@ -62,6 +70,15 @@ namespace VehicleManager.UI
                 else
                 {
                     MessageBox.Show("No vehicle selected", "Wrong selection", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+            });
+
+            SaveToDB = new RelayCommand(() =>
+            {
+                if (SelectedVehicle != null)
+                {
+                    // Save current vehicle to database
+                    VehicleDBManager.Save(SelectedVehicle.Model);
                 }
             });
         }
@@ -91,6 +108,12 @@ namespace VehicleManager.UI
         }
 
         public ICommand RemoveCarCommand
+        {
+            get;
+            set;
+        }
+
+        public ICommand SaveToDB
         {
             get;
             set;
