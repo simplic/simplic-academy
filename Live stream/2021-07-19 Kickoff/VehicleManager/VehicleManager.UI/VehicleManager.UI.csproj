@@ -101,10 +101,34 @@
       <Project>{FC152C21-CFEA-4868-AA49-1ECAA18A9A00}</Project>
       <Name>VehicleManager.DB</Name>
     </ProjectReference>
+    <ProjectReference Include="..\VehicleManager.DI.Data.DB\VehicleManager.DI.Data.DB.csproj">
+      <Project>{bfb414c8-caaf-4be4-830f-2b6f39fd86d9}</Project>
+      <Name>VehicleManager.DI.Data.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VehicleManager.DI.Json\VehicleManager.DI.Json.csproj">
+      <Project>{2d1d25ba-6340-4aaf-98a5-f151710f5cbe}</Project>
+      <Name>VehicleManager.DI.Json</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VehicleManager.DI.Service\VehicleManager.DI.Service.csproj">
+      <Project>{A89EA9D0-B50C-4547-9124-91EC0FB507BA}</Project>
+      <Name>VehicleManager.DI.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VehicleManager.DI\VehicleManager.DI.csproj">
+      <Project>{faaebaf0-dd6a-4368-b30c-1d4ff8d3defa}</Project>
+      <Name>VehicleManager.DI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VehicleManager\VehicleManager.csproj">
       <Project>{c277c17a-ca43-4ea0-b5dc-3a5cd0504e07}</Project>
       <Name>VehicleManager</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Unity.Abstractions">
+      <Version>5.11.7</Version>
+    </PackageReference>
+    <PackageReference Include="Unity.Container">
+      <Version>5.11.11</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

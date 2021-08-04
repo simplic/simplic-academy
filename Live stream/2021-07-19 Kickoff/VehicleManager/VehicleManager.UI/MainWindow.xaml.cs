@@ -12,6 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Unity;
+using VehicleManager.DI;
+using VehicleManager.DI.Data.DB;
+using VehicleManager.DI.Json;
+using VehicleManager.DI.Service;
 
 namespace VehicleManager.UI
 {
@@ -20,13 +25,16 @@ namespace VehicleManager.UI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private VehicleManagerViewModel viewModel = new VehicleManagerViewModel();
-
         public MainWindow()
         {
             InitializeComponent();
 
-            DataContext = viewModel;
+            var container = new UnityContainer();
+            container.RegisterType<IVehicleRepository, VehicleRepositoryJson>("json");
+            container.RegisterType<IVehicleRepository, VehicleRepository>("sql");
+            container.RegisterType<IVehicleService, VehicleService>();
+
+            DataContext = new VehicleManagerViewModel(container);
         }
     }
 }

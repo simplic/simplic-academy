@@ -7,7 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using Unity;
 using VehicleManager.DB;
+using VehicleManager.DI;
 
 namespace VehicleManager.UI
 {
@@ -39,16 +41,31 @@ namespace VehicleManager.UI
         private ObservableCollection<VehicleViewModel> vehicles = new ObservableCollection<VehicleViewModel>();
         private VehicleViewModel selectedVehicle;
 
-        public VehicleManagerViewModel()
+        private string repositoryName = "sql";
+
+        private IUnityContainer container;
+        private IVehicleRepository vehicleRepository;
+
+        public VehicleManagerViewModel(IUnityContainer container)
         {
-            var dbVehicles = VehicleDBManager.GetAll();
+            this.container = container;
+
+            foreach (var repo in container.ResolveAll<IVehicleRepository>())
+            {
+                var name = container.Registrations.FirstOrDefault(x => x.MappedToType == repo.GetType());
+
+                Repositories.Add(name.Name);
+            }
+
+            vehicleRepository = container.Resolve<IVehicleRepository>("sql");
+            var dbVehicles = vehicleRepository.GetAll();
 
             foreach (var dbVehicle in dbVehicles)
             {
                 vehicles.Add(new VehicleViewModel(dbVehicle));
             }
 
-            AddCarCommand = new RelayCommand(() => 
+            AddCarCommand = new RelayCommand(() =>
             {
                 this.Vehicles.Add(new VehicleViewModel
                 {
@@ -58,7 +75,7 @@ namespace VehicleManager.UI
                 });
             });
 
-            RemoveCarCommand = new RelayCommand(() => 
+            RemoveCarCommand = new RelayCommand(() =>
             {
                 if (SelectedVehicle != null)
                 {
@@ -78,7 +95,7 @@ namespace VehicleManager.UI
                 if (SelectedVehicle != null)
                 {
                     // Save current vehicle to database
-                    VehicleDBManager.Save(SelectedVehicle.Model);
+                    vehicleRepository.Save(SelectedVehicle.Model);
                 }
             });
         }
@@ -122,7 +139,7 @@ namespace VehicleManager.UI
         public VehicleViewModel SelectedVehicle
         {
             get => selectedVehicle;
-            set 
+            set
             {
                 selectedVehicle = value;
 
@@ -139,6 +156,27 @@ namespace VehicleManager.UI
         public ObservableCollection<VehicleViewModel> Vehicles
         {
             get => vehicles;
+        }
+
+        public ObservableCollection<string> Repositories { get; set; } = new ObservableCollection<string>();
+        
+        public string RepositoryName 
+        {
+            get => repositoryName;
+            set 
+            {
+                repositoryName = value;
+
+                vehicles.Clear();
+
+                vehicleRepository = container.Resolve<IVehicleRepository>(repositoryName);
+                var dbVehicles = vehicleRepository.GetAll();
+
+                foreach (var dbVehicle in dbVehicles)
+                {
+                    vehicles.Add(new VehicleViewModel(dbVehicle));
+                }
+            }
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VehicleManager.UI"
         mc:Ignorable="d"
-        Title="{Binding WindowTitle}" Height="450" Width="800">
+        Title="{Binding WindowTitle}" Height="450" Width="1024">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -22,6 +22,9 @@
             <Button Content="Delete car" Grid.Row="0" Grid.Column="0" Margin="1" Width="100" Command="{Binding RemoveCarCommand}" />
             <Label Content="Company" />
             <TextBox Width="250" Height="26" Text="{Binding CompanyName, UpdateSourceTrigger=PropertyChanged}" />
+            <Label Content="Storage" />
+            <ComboBox ItemsSource="{Binding Repositories}" SelectedItem="{Binding RepositoryName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MinWidth="50" />
+
         </StackPanel>
 
         <ListBox Grid.Row="1" Grid.Column="0" ItemsSource="{Binding Vehicles}" SelectedItem="{Binding SelectedVehicle, UpdateSourceTrigger=PropertyChanged}">

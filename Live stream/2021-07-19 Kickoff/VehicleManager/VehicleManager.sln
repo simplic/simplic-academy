@@ -11,6 +11,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleManager.UI", "Vehicl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleManager.DB", "VehicleManager.DB\VehicleManager.DB.csproj", "{FC152C21-CFEA-4868-AA49-1ECAA18A9A00}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DI", "DI", "{A6634DE4-23A9-43AE-A694-37B4CC17AB10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleManager.DI", "VehicleManager.DI\VehicleManager.DI.csproj", "{FAAEBAF0-DD6A-4368-B30C-1D4FF8D3DEFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleManager.DI.Data.DB", "VehicleManager.DI.Data.DB\VehicleManager.DI.Data.DB.csproj", "{BFB414C8-CAAF-4BE4-830F-2B6F39FD86D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleManager.DI.Json", "VehicleManager.DI.Json\VehicleManager.DI.Json.csproj", "{2D1D25BA-6340-4AAF-98A5-F151710F5CBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleManager.DI.Service", "VehicleManager.DI.Service\VehicleManager.DI.Service.csproj", "{A89EA9D0-B50C-4547-9124-91EC0FB507BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +43,31 @@ Global
 		{FC152C21-CFEA-4868-AA49-1ECAA18A9A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC152C21-CFEA-4868-AA49-1ECAA18A9A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC152C21-CFEA-4868-AA49-1ECAA18A9A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAAEBAF0-DD6A-4368-B30C-1D4FF8D3DEFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAAEBAF0-DD6A-4368-B30C-1D4FF8D3DEFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAAEBAF0-DD6A-4368-B30C-1D4FF8D3DEFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAAEBAF0-DD6A-4368-B30C-1D4FF8D3DEFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB414C8-CAAF-4BE4-830F-2B6F39FD86D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB414C8-CAAF-4BE4-830F-2B6F39FD86D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB414C8-CAAF-4BE4-830F-2B6F39FD86D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB414C8-CAAF-4BE4-830F-2B6F39FD86D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1D25BA-6340-4AAF-98A5-F151710F5CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1D25BA-6340-4AAF-98A5-F151710F5CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1D25BA-6340-4AAF-98A5-F151710F5CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1D25BA-6340-4AAF-98A5-F151710F5CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A89EA9D0-B50C-4547-9124-91EC0FB507BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A89EA9D0-B50C-4547-9124-91EC0FB507BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A89EA9D0-B50C-4547-9124-91EC0FB507BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A89EA9D0-B50C-4547-9124-91EC0FB507BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FAAEBAF0-DD6A-4368-B30C-1D4FF8D3DEFA} = {A6634DE4-23A9-43AE-A694-37B4CC17AB10}
+		{BFB414C8-CAAF-4BE4-830F-2B6F39FD86D9} = {A6634DE4-23A9-43AE-A694-37B4CC17AB10}
+		{2D1D25BA-6340-4AAF-98A5-F151710F5CBE} = {A6634DE4-23A9-43AE-A694-37B4CC17AB10}
+		{A89EA9D0-B50C-4547-9124-91EC0FB507BA} = {A6634DE4-23A9-43AE-A694-37B4CC17AB10}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2111D287-E4C7-4B41-B8BC-D5660C2D2882}
