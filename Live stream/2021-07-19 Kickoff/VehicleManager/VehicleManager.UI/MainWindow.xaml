@@ -1,0 +1,70 @@
+﻿<Window x:Class="VehicleManager.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VehicleManager.UI"
+        mc:Ignorable="d"
+        Title="{Binding WindowTitle}" Height="450" Width="1024">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <Button Content="New car" Grid.Row="0" Grid.Column="0" Margin="1" Width="100" Command="{Binding AddCarCommand}" />
+            <Button Content="Delete car" Grid.Row="0" Grid.Column="0" Margin="1" Width="100" Command="{Binding RemoveCarCommand}" />
+            <Label Content="Company" />
+            <TextBox Width="250" Height="26" Text="{Binding CompanyName, UpdateSourceTrigger=PropertyChanged}" />
+            <Label Content="Storage" />
+            <ComboBox ItemsSource="{Binding Repositories}" SelectedItem="{Binding RepositoryName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" MinWidth="50" />
+
+        </StackPanel>
+
+        <ListBox Grid.Row="1" Grid.Column="0" ItemsSource="{Binding Vehicles}" SelectedItem="{Binding SelectedVehicle, UpdateSourceTrigger=PropertyChanged}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Man." />
+                        <Label Content="{Binding Manufacturer}" />
+                        <Label Content="Vehicle color" />
+                        <Label Content="{Binding Color}" />
+                        <Label Content="Fueld type" />
+                        <Label Content="{Binding FuelType}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <Label Content="Manufacturer" Grid.Column="0" Grid.Row="0" />
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding SelectedVehicle.Manufacturer, UpdateSourceTrigger=PropertyChanged}" Width="250" />
+
+            <Label Content="Color" Grid.Column="0" Grid.Row="1" />
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding SelectedVehicle.Color, UpdateSourceTrigger=PropertyChanged}" Width="250" />
+
+            <Label Content="Fuel type" Grid.Column="0" Grid.Row="2" />
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding SelectedVehicle.FuelType, UpdateSourceTrigger=PropertyChanged}" Width="250" />
+
+            <Button Content="Save" Grid.Column="1" Grid.Row="3" Command="{Binding SaveToDB}" Margin="2" />
+        </Grid>
+    </Grid>
+</Window>
