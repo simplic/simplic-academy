@@ -11,8 +11,8 @@ namespace VehicleManager.Console
         static void Main(string[] args)
         {
             System.Console.WriteLine("Welcome to the simplic vehicle manager!");
-            System.Console.WriteLine("You have the following options. Enter `new-car` / `edit-car` / `del-car`");
-            System.Console.WriteLine("Enter `exit` to leave the application");
+            System.Console.WriteLine("You have the following options. Enter `new` / `edit` / `del`");
+            System.Console.WriteLine("Enter `exit` to leave the application.");
 
             var vehicleNumber = 10;
             var command = System.Console.ReadLine();
@@ -41,7 +41,7 @@ namespace VehicleManager.Console
 
                     System.Console.WriteLine($"You vehicle was created successfully {vehicle.Id}");
                 }
-                else if (command == "edit-car")
+                else if (command == "edit")
                 {
                     ExecutionAction action = (v) =>
                     {
@@ -50,7 +50,7 @@ namespace VehicleManager.Console
 
                     SearchAndExecute(vehicles, action);
                 }
-                else if (command == "del-car")
+                else if (command == "del")
                 {
                     ExecutionAction action = (v) =>
                     {
@@ -59,7 +59,7 @@ namespace VehicleManager.Console
 
                     SearchAndExecute(vehicles, action);
                 }
-                else if (command == "print-car")
+                else if (command == "print")
                 {
                     ExecutionAction action = (v) =>
                     {
